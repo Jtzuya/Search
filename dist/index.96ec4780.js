@@ -1,0 +1,2 @@
+const e=document.getElementById("searchInput");e.addEventListener("keyup",(function(){const t=e.value.toLowerCase();let l=document.querySelectorAll(".__eachProduct");Array.from(l).map((e=>{-1!==e.firstElementChild.firstElementChild.querySelector(".__eachTitle").textContent.toLocaleLowerCase().indexOf(t)?e.style.display="block":e.style.display="none"}))}));
+//# sourceMappingURL=index.96ec4780.js.map
