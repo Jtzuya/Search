@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Custom;
+  src: url("custom-font.00f9cc09.ttf");
+}
+
+body {
+  background-color: #faf7ed;
+}
+
+.__headerCase {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.25rem;
+  display: flex;
+}
+
+header h3 {
+  text-shadow: 4.5px 4.5px 5px #fff;
+  font-family: Custom;
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+.info {
+  padding-left: 1.25rem;
+  font-family: Custom, monospace;
+}
+
+.__productList {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.25rem;
+  padding: 1.25rem 1.25rem 4rem;
+  display: grid;
+}
+
+.__eachProduct {
+  background: #daab24;
+  border: 1.5px solid #25252a;
+  border-radius: 6px;
+}
+
+.__eachDetails {
+  width: 100%;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-inline: auto;
+  padding: 1.75rem 1.25rem 1.75rem 2.25rem;
+  display: flex;
+  box-shadow: 0 0 10px #0003;
+}
+
+.__eachContent {
+  width: 100%;
+  position: relative;
+}
+
+.__eachContent .__eachTitle {
+  min-width: 300px;
+  text-shadow: 2px 1px 5px #fff;
+  font-family: Custom, monospace;
+  font-size: 2.25rem;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+}
+
+.__eachDetails img {
+  width: 250px;
+  height: 250px;
+  border: 1.5px solid #25252a;
+  border-radius: 4px;
+}
+
+.__eachDetails .skeleton {
+  width: 250px;
+  height: 250px;
+  background-color: #faf7edd9;
+  border: 1.5px solid #25252a;
+  border-radius: 4px;
+}
+
+.__eachPrice {
+  color: #dc143c;
+  font-family: monospace;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+#searchInput {
+  border: 1.25px solid #faf7ed;
+  border-radius: 3px;
+  outline: none;
+  padding: .5rem 1.25rem;
+  font-family: Custom, monospace;
+  font-size: 1.25rem;
+  box-shadow: -10px -10px 15px #faf7ed80, 10px 10px 15px #4646461f;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding: 1rem 4rem;
+  display: flex;
+}
+
+footer h1 {
+  font-family: Custom, monospace;
+  font-size: 21px;
+}
+
+.github {
+  position: relative;
+}
+
+.github:after {
+  content: "Check Code Here!";
+  width: max-content;
+  white-space: nowrap;
+  color: #000;
+  background: #00000026;
+  border-radius: 1.25rem;
+  padding: .5rem 1.25rem;
+  font-family: Custom, monospace;
+  font-size: 14.5px;
+  position: absolute;
+  top: -90%;
+  right: 0;
+}
+
+.github:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid #00000026;
+  border-left: 7px solid #0000;
+  border-right: 7px solid #0000;
+  position: absolute;
+  top: -10.5%;
+  right: 18px;
+  transform: rotate(180deg);
+}
+
+.github__link {
+  color: inherit;
+  opacity: .25;
+  font-size: 3rem;
+  text-decoration: none;
+  transition: all .35s ease-in-out;
+  display: flex;
+  position: relative;
+}
+
+.github__link:hover {
+  opacity: .45;
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  footer {
+    margin-top: 3.25rem;
+    padding: 1rem 1.25rem;
+  }
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
