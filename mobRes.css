@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+    .__headerCase {
+        flex-direction: column;
+    }
+
+    .__productList {
+        grid-template-columns: unset;
+    }
+
+    .__eachDetails {
+        gap: 0.75rem;
+        padding: 1rem 1.25rem
+    }
+
+    .__eachContent .__eachTitle {
+        left: 0;
+    }
+
+    .__eachDetails img,
+    .__eachDetails .skeleton {
+        width: 165px;
+        height: 165px;
+        max-width: 100%;
+    }
+    
+    .__eachDetails img {
+        border-radius: 2px;
+        border: none;
+    }
+}
