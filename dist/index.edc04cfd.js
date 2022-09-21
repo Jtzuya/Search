@@ -532,7 +532,8 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"kQhZU":[function(require,module,exports) {
-require("dotenv").config();
+var _dotenv = require("dotenv");
+_dotenv.config();
 const API = "https://miamibeachbum.com/products.json";
 console.log(API);
 async function getShopData(url) {
