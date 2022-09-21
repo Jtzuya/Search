@@ -1,4 +1,5 @@
-require('dotenv').config()
+import * as dotenv from 'dotenv';
+dotenv.config()
 
 const API = process.env.SECRET_PATH
 console.log(API)
