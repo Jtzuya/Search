@@ -1,8 +1,4 @@
-import * as dotenv from 'dotenv';
-dotenv.config()
-
-const API = process.env.SECRET_PATH
-console.log(API)
+const API = 'https://miamibeachbum.com/products.json'
 
 async function getShopData(url) {
     const fetching = await fetch(url)
