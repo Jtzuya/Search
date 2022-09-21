@@ -16,15 +16,16 @@
         left: 0;
     }
 
-    .__eachDetails img,
     .__eachDetails .skeleton {
         width: 165px;
         height: 165px;
-        max-width: 100%;
     }
     
     .__eachDetails img {
         border-radius: 2px;
         border: none;
+        height: calc(165px - 3px);
+        object-fit: cover;
+        width: 100%;
     }
 }
